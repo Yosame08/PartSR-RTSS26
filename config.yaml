@@ -1,0 +1,33 @@
+chunk_len: 3 # chunk length of dash clip (s), default 30fps
+buffer_lim: 5 # the upper limit of users' buffer (s)
+
+gpu_id: 0 # Set a non-existent GPU ID to use CPU
+ffmpeg: "ffmpeg"
+ffmpeg_residual: "ffmpeg-residual" # executable built from FFmpeg-Residual
+
+source_server: "http://127.0.0.1:23333"
+edge_port: 11451
+
+edge_server: "http://127.0.0.1:11451"
+
+video_width: 180
+video_height: 320
+
+classify_sample_rate: 10 # Use 1 frame in every x frames for GRU in classifier
+classify_model_path: "models/classifier.pth"
+detector_model_path: "extractor/best_rpn.pth"
+scheduler_model_path: "scheduler/neuralucb7835.pth"
+
+beta: 0.08
+dyn_thres: 4.4745
+
+edge:
+  sr_models: [ "EDSR_S_x4_0.8800.pth", "BasicVSR_ff_77000.pth" ]
+  batch_size: [ 90, 90 ] # for VSR models, set the clip length instead of the number of videos
+
+client:
+  sr_models: [ "EDSR_S_x4_0.8800.pth" ] # support only one model temporarily
+  batch_size: [ 90 ]
+
+pad: 5 # expand SR range to avoid edge effect
+sr_sizes: [ 60, 90 ]
