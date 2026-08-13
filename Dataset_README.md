@@ -2,6 +2,17 @@
 
 This directory contains three video categories: live commerce, sports, and gaming. The data can be used for video super-resolution (VSR) and related tasks.
 
+## Data Availability
+
+The dataset used in this work is currently hosted on a local server maintained by our research group and is not yet publicly downloadable. We are evaluating two options for broader distribution: (1) hosting a mirrored copy on a public cloud storage service, and (2) providing controlled remote access to the local server via VPN with appropriate security restrictions.
+
+In the meantime, researchers interested in obtaining the dataset are welcome to contact us directly, and we will respond with access instructions:
+
+- Yuchen Wang — wang_yuchen@connecthku.hk
+- Weijia Lang — 24210240192@m.fudan.edu.cn
+
+Please include your name, affiliation, and intended use of the dataset in your request.
+
 ## Video Statistics
 
 Scope: `.mp4` files in the three directories listed below. Statistics were collected on August 4, 2026.
