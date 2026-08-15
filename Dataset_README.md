@@ -8,7 +8,7 @@ The dataset used in this work is currently hosted on a local server maintained b
 
 In the meantime, researchers interested in obtaining the dataset are welcome to contact us directly, and we will respond with access instructions:
 
-- Yuchen Wang — wang_yuchen@connecthku.hk
+- Yuchen Wang — wang_yuchen@connect.hku.hk
 - Weijia Lang — 24210240192@m.fudan.edu.cn
 
 Please include your name, affiliation, and intended use of the dataset in your request.
