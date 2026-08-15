@@ -28,12 +28,17 @@ Place the following files at the paths named by `config.yaml`:
 - `models/classifier.pth`
 - `scheduler/neuralucb7835.pth`
 
-Build the residual-enabled FFmpeg from the companion repository
-`Yosame08/FFmpeg-Residual`, then set `ffmpeg_residual` in `config.yaml` to the
-resulting executable. The tracked build recipe is
+[Build the residual-enabled FFmpeg from `Yosame08/FFmpeg-Residual`](https://github.com/Yosame08/FFmpeg-Residual),
+then set `ffmpeg_residual` in `config.yaml` to the resulting executable. The
+tracked build recipe is
 `tools/configure_h264_residual_probe.sh` in that repository; it uses static
 linking and disables assembly implementations so the modified C decoder is
 compiled into the binary.
+
+RoI annotations are created and saved with the public
+[semiauto-roi-labeler](https://github.com/Yosame08/semiauto-roi-labeler) tool.
+The dataset preparation scripts convert its saved project JSON into the JSON
+and per-frame YOLO labels expected by the PartSR runtime.
 
 ## Configuration
 
