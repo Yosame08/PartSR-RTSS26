@@ -40,6 +40,10 @@ RoI annotations are created and saved with the public
 The dataset preparation scripts convert its saved project JSON into the JSON
 and per-frame YOLO labels expected by the PartSR runtime.
 
+## Dataset
+
+See [`Dataset_README.md`](./Dataset_README.md) for the video corpus, GT/LR pairs, and instructions for requesting access.
+
 ## Configuration
 
 Set the paths and endpoints in `config.yaml`. The default dimensions are

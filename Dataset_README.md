@@ -4,9 +4,7 @@ This directory contains three video categories: live commerce, sports, and gamin
 
 ## Data Availability
 
-The dataset used in this work is currently hosted on a local server maintained by our research group and is not yet publicly downloadable. We are evaluating two options for broader distribution: (1) hosting a mirrored copy on a public cloud storage service, and (2) providing controlled remote access to the local server via VPN with appropriate security restrictions.
-
-In the meantime, researchers interested in obtaining the dataset are welcome to contact us directly, and we will respond with access instructions:
+The dataset used in this work is hosted on a local server maintained by our research group. Researchers interested in obtaining the dataset are welcome to contact us directly, and we will respond with access instructions:
 
 - Yuchen Wang — wang_yuchen@connect.hku.hk
 - Weijia Lang — 24210240192@m.fudan.edu.cn
@@ -28,7 +26,7 @@ Scope: `.mp4` files in the three directories listed below. Statistics were colle
 
 ## Scene Composition
 
-- **Live commerce:** `datasets_prepare/videos` contains the source MP4 files, while `Sell-dataset` contains the corresponding GT/LR frames.
+- **Live commerce:** `datasets_prepare/videos` contains 66 videos used for training, while a separate held-out set of 10 videos (in `sell-test`) is reserved for evaluation only. `Sell-dataset` contains the corresponding GT/LR frames.
 - **Sports:** `Sports-dataset/extracted_videos` contains basketball, football, volleyball, and aerobic gymnastics videos, with 800 videos per sport split across `trainval` and `test`.
 - **Gaming:** `Game-dataset` contains Elden Ring (12 videos), LOL (17 videos, including 6 in `LOL_test`), and VALORANT (12 videos).
 
@@ -41,5 +39,3 @@ GT contains high-resolution frames, and LR contains their low-resolution counter
 | Live commerce | `video_7_11`: 554 sequences x 60 frames; `video_8_20`: 474 sequences x 90 frames | `pic_7_11`: 2,314 GT images and 2,314 LR images |
 | Sports | `sports_set_gt` / `sports_set_lr`: 2,116 sequences and 158,700 frames in each set | `sports_sr_pic_subset`: 19,252 GT images and 19,252 LR images |
 | Gaming | `game_set_gt` / `game_set_lr`: 221 sequences and 19,890 frames in each set | `game_sr_pic_subset`: 7,576 GT images and 7,576 LR images |
-
-The sports and gaming data also include `labels` directories. Sports metadata is available under `MultiSports`, and the current gaming annotations contain six LOL JSON files.
